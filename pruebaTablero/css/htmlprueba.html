@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HOLA</title>
+</head>
+<body>
+<style>
+* { box-sizing: border-box; margin:0; padding:0; }
+body {
+    font-family: 'Bitter', Georgia, serif;
+    width: 673px;
+}
+a { color: #161616; text-decoration: none; }
+
+.home_post_new * { transition: .5s all; }
+
+.home_post_new {
+    background-position: right center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+    border: 1px solid #009884;
+}
+
+.home_post_new_text {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 100%;
+    background: hsla(0,0%,100%,0);
+    color: #fff;
+    position: relative;
+}
+
+.home_post_new:hover .home_post_new_text {
+    background: hsla(0,0%,0%,.33);
+}
+
+.home_post_new_block {
+    flex-grow: 2;
+    position: relative;
+    top: 250px;
+    width: 100%;
+    padding: 16px 16px 32px;
+    font-size: .9em;
+    line-height: 125%;
+    text-shadow: 0 1px 0 hsla(0,0%,0%,.75), 0 0 5px hsla(0,0%,0%,.75);
+}
+.home_post_new:hover .home_post_new_block {
+    top: 0;
+}
+.home_post_new_title {
+    flex-grow: 1;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-size: 1.625em;
+    line-height: 1.333em;
+    width: 100%;
+    padding: 4px 8px 16px;
+    text-shadow: 0 1px 0 hsla(0,0%,0%,.75), 0 0 1px hsla(0,0%,0%,.75), 0 1px 5px hsla(0,0%,0%,.75);
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0)));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    background: -o-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    background: -ms-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+}
+
+.home_post_new_more {
+    position: absolute;
+    right: 0;
+    bottom: -50%;
+    padding: 4px 8px;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    color: #fff;
+    text-shadow: 0 1px 0 hsla(0,0%,0%,.75), 0 0 5px hsla(0,0%,0%,.75);
+    border-style: solid;
+    border-width: 1px 0 0 1px;
+    border-color: currentColor;
+    border-radius: 0; 
+    border-top-left-radius: 2px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: hsla(0,0%,0%, .5);
+}
+.home_post_new_more:hover {
+    color: #009884;
+    cursor: pointer;
+}
+.home_post_new:hover .home_post_new_more {
+    bottom: 0;
+}
+
+
+.home_post_new_meta {
+    width: calc(100% - 600px);
+    height: 100%;
+    text-align: center;
+    color: #009884;
+    border-right: 1px solid #009884;
+}
+
+.home_post_new_date {
+    background: #009884;
+    color: #eee;
+    padding: 24px 0 0;
+    height: 50%;
+}
+
+.home_post_new_date_day {
+    font-size: 250%;
+    font-weight: bold;
+}
+
+.home_post_new_date_month {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 150%;
+    border-top: 1px solid #eee;
+    display: inline-block;
+    margin-top: 8px;
+    padding-top: 4px;
+}
+
+.home_post_new_date_comments {
+    color: currentColor;
+    display: inline-block;
+    border-radius: 50%;
+    border-bottom-right-radius: 0;
+    width: 42px;
+    height: 42px;
+    margin-top: 32px; 
+    padding: 12px 4px;
+    border: 1px solid currentColor;
+    margin-top: calc(50% - 4px);
+}
+
+.home_post_new_text:after {
+    clear: both;
+    overflow: auto;
+    zoom: 1;
+}
+</style>
+<div class="home_post_new" style="background-image: url(http://geekometric.com/wp-content/uploads/2014/11/fetch_ifl.jpg);">
+    <a class="home_post_new_text" href="#">
+        <div class="home_post_new_title">[Test] inFAMOUS : First Light</div>
+        <div class="home_post_new_block">
+            <p>Après les aventures de Delsin, voici inFAMOUS : First Light, qui propose de jouer dans la peau d’un personnage secondaire de Second Son : Fetch. Une aventure qui est, à l’instar de Festival of Blood pour inFAMOUS 2, une extension ne nécessitant pas le jeu de base. Même ville, différents pouvoirs (enfin, pas vraiment), nouvelle histoire et un mode de jeu en plus… De quoi s’amuser un peu ! Mais qu’est-ce que ça vaut ? Voyons cela.</p>
+        </div>
+    </a>
+    <div class="home_post_new_more">Lire la suite &rarr;</div>
+    <div class="home_post_new_meta">
+        <div class="home_post_new_date" title="30 novembre 2014">
+            <div class="home_post_new_date_day">30</div>
+            <div class="home_post_new_date_month">NOV</div>
+        </div>
+        <a href="#" class="home_post_new_date_comments" title="2 commentaires">2</a>
+    </div>
+</div>
+
+<div class="home_post_new" style="background-image: url(http://geekometric.com/wp-content/uploads/2014/11/monumentvalley.jpg);">
+    <a class="home_post_new_text" href="#">
+        <div class="home_post_new_title">[Test] Monument Valley</div>
+        <div class="home_post_new_block">
+            <p>Profitant d’un crédit de 3€ offert par Amazon sur leur App Shop, je me suis laissé tenter par Monument Valley, ayant entendu du bien du jeu et étant assez intrigué son style. Au pire, je ne perdais rien dans l’affaire… Après plusieurs courtes séances, j’ai terminé le jeu et j’ai donc pu forger un avis assez complet dessus, malgré le fait que Monument Valley soit un « petit jeu », mais il ne faut pas négliger son ambition et potentiel pour autant. </p>
+        </div>
+    </a>
+    <div class="home_post_new_more">Lire la suite &rarr;</div>
+    <div class="home_post_new_meta">
+        <div class="home_post_new_date" title="28 octobre 2014">
+            <div class="home_post_new_date_day">17</div>
+            <div class="home_post_new_date_month">NOV</div>
+        </div>
+        <a href="#" class="home_post_new_date_comments" title="37 commentaires">37</a>
+    </div>
+</div>
+
+<div class="home_post_new" style="background-image: url(http://geekometric.com/wp-content/uploads/2014/11/interstellar.jpg);">
+    <a class="home_post_new_text" href="#">
+        <div class="home_post_new_title">[Séance ciné] Interstellar</div>
+        <div class="home_post_new_block">
+            <p>Alors comme ça le prochain long-métrage de Christopher Nolan est sorti ? La science-fiction, c’est mon truc, ça ! Je me suis évité tout spoiler possible sur ce film, cette critique en fera autant. J’ai eu le plaisir de voir Interstellar en IMAX, ma première séance dans ce format d’ailleurs, ce qui ne m’a pas déçu. Bon allez, on va voir tout ça, 3… 2… 1… décollage !</p>
+        </div>
+    </a>
+    <div class="home_post_new_more">Lire la suite &rarr;</div>
+    <div class="home_post_new_meta">
+        <div class="home_post_new_date" title="28 octobre 2014">
+            <div class="home_post_new_date_day">11</div>
+            <div class="home_post_new_date_month">NOV</div>
+        </div>
+        <a href="#" class="home_post_new_date_comments" title="37 commentaires">37</a>
+    </div>
+</div>
+
+<div class="home_post_new" style="background-image: url(http://geekometric.com/wp-content/uploads/2014/11/johnwick.jpg);">
+    <a class="home_post_new_text" href="#">
+        <div class="home_post_new_title">[Séance ciné] John Wick</div>
+        <div class="home_post_new_block">
+            <p>Encore un film qui est sorti de nulle part pour moi, John Wick a attiré mon attention, notamment grâce à la présence de l’immortel Keanu Reeves sur l’affiche. Malgré la minuscule salle (vous savez, celle pour 40 personnes qu’on paie aussi cher que les énormes salles…), j’ai bien pu me mettre dans le film. Chargez vos fusils, on va voir ce que ça donne.</p>
+        </div>
+    </a>
+    <div class="home_post_new_more">Lire la suite &rarr;</div>
+    <div class="home_post_new_meta">
+        <div class="home_post_new_date" title="28 octobre 2014">
+            <div class="home_post_new_date_day">28</div>
+            <div class="home_post_new_date_month">OCT</div>
+        </div>
+        <a href="#" class="home_post_new_date_comments" title="37 commentaires">37</a>
+    </div>
+</div>
+
+<div class="home_post_new" style="background-image: url(http://geekometric.com/wp-content/uploads/2013/12/tlou_goodies.jpg);">
+    <a class="home_post_new_text" href="#">
+        <div class="home_post_new_title">[Avis de passage] Goodies The Last of Us : Press Kit, figurine…</div>
+        <div class="home_post_new_block">
+            <p>Bon, c'est un arrivage qui date un peu, mais je tenais à vous présenter quelques goodies tirés de The Last of Us, non seulement parce que j'adore ce jeu mais parce que ces chouettes objets sont plutôt réussis, et étant donné qu'ils ne sont vus que par mes petits yeux, pourquoi ne pas vous en faire profiter un peu également ? Et ce n'est certainement pas un moyen de faire du contenu en attendant que je fasse mes tests de jeux PS4, je vous assure ! Bon j'ai pris un paquet de photos, c'est cadeau.</p>
+        </div>
+    </a>
+    <div class="home_post_new_more">Lire la suite &rarr;</div>
+    <div class="home_post_new_meta">
+        <div class="home_post_new_date" title="28 octobre 2014">
+            <div class="home_post_new_date_day">28</div>
+            <div class="home_post_new_date_month">OCT</div>
+        </div>
+        <a href="#" class="home_post_new_date_comments" title="3 commentaires">3</a>
+    </div>
+</div>
+</body>
+</html>

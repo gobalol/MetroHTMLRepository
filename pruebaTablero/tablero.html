@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prueba tablero</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.1/angular.min.js"></script>
+	<script type="text/javascript" src="js/tableroApp.js"></script>
+	<script type="text/javascript" src="js/tableroModel.js"></script>
+	<script type="text/javascript" src="js/tableroController.js"></script>
+	<script>
+		function allowDrop(ev) {
+			ev.preventDefault();
+		}
+
+		function drag(ev) {
+			ev.dataTransfer.setData("text/html", ev.target.id);
+		}
+
+		function drop(ev, el) {
+			ev.preventDefault();
+			var data = ev.dataTransfer.getData("text/html");
+			//el.appendChild(document.getElementById(data));
+			el.appendChild(document.getElementById(data));
+		}
+	</script>
+</head>
+<body>
+	<section class="wrapper" data-ng-app="tableroApp" data-ng-controller="tableroController">
+		<article class="flexContainer" data-ng-model="tableroModel" data-ng-controller="tableroController">
+			<article class="rowContainer">
+				<div class="rowWidth" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+					<div class="squareContainer">
+						<div id="1" class="big pos" draggable="true" ondragstart="drag(event)" ondrop="return false" ondragover="return false">3</div>
+						<div id="2" class="med pos" draggable="true" ondragstart="drag(event)" ondrop="return false" ondragover="return false">1</div>
+						<div id="3" class="med pos" draggable="true" ondragstart="drag(event)" ondrop="return false" ondragover="return false">2</div>
+						<div id="4" class="small pos" draggable="true" ondragstart="drag(event)" ondrop="return false" ondragover="return false">5</div>
+						<div id="5" class="small pos" draggable="true" ondragstart="drag(event)" ondrop="return false" ondragover="return false">5</div>
+						<div id="6" class="small pos" draggable="true" ondragstart="drag(event)" ondrop="return false" ondragover="return false">5</div>
+						<div id="7" class="small pos" draggable="true" ondragstart="drag(event)" ondrop="return false" ondragover="return false">5</div>
+						<div id="8" class="small pos" draggable="true" ondragstart="drag(event)" ondrop="return false" ondragover="return false">5</div>
+						<div id="9" class="small pos" draggable="true" ondragstart="drag(event)" ondrop="return false" ondragover="return false">5</div>
+						<div id="10" class="med pos" draggable="true" ondragstart="drag(event)" ondrop="return false" ondragover="return false">2</div>
+						<div id="11" class="med pos" draggable="true" ondragstart="drag(event)" ondrop="return false" ondragover="return false">2</div>
+						<div id="12" class="small pos" draggable="true" ondragstart="drag(event)" ondrop="return false" ondragover="return false">5</div>
+						<div id="13" class="small pos" draggable="true" ondragstart="drag(event)" ondrop="return false" ondragover="return false">5</div>
+						<div id="14" class="small pos" draggable="true" ondragstart="drag(event)" ondrop="return false" ondragover="return false">5</div>
+					</div>
+				</div>
+			</article>
+			<article class="rowContainer">
+			<div class="rowWidth" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+				<div class="squareContainer">
+					<div class="big pos">9</div>
+					<div class="med pos">10</div>
+					<div class="med pos">10</div>
+					<div class="small pos">14</div>
+					<div class="small pos">14</div>
+					<div class="big pos">9</div>
+				</div>
+			</div>
+			</article>
+			<article class="rowContainer">
+			<div class="rowWidth">
+				<div class="squareContainer">
+					<div class="big pos">11</div>
+					<div class="small pos">14</div>
+					<div class="small pos">15</div>
+					<div class="small pos">15</div>
+					<div class="small pos">15</div>
+					<div class="small pos">15</div>
+					<div class="small pos">15</div>
+					<div class="small pos">15</div>
+					<div class="small pos">15</div>
+					<div class="med pos">10</div>
+					<div class="small pos">15</div>
+					<div class="small pos">15</div>
+					<div class="small pos">15</div>
+					<div class="med pos">10</div>
+					<div class="small pos">14</div>
+					<div class="med pos">10</div>
+					<div class="small pos">14</div>
+					<div class="small pos">15</div>
+				</div>
+			</div>
+			</article>
+			<article class="rowContainer">
+			<div class="rowWidth">
+					<div class="med pos">2</div>
+						<div class="square4x4containerOr3x1">
+							<div class="small pos cuatroSquare">14</div>
+							<div class="small pos cuatroSquare">15</div>
+							<div class="small pos cuatroSquare">14</div>
+						</div>
+					<div class="square4x4containerOr3x1">
+						<div class="small pos cuatroSquare">14</div>
+						<div class="small pos cuatroSquare">15</div>
+						<div class="small pos cuatroSquare">14</div>
+						<div class="small pos cuatroSquare">15</div>
+					</div>
+					
+					<div class="med pos">2</div>
+					<div class="big pos">12</div>
+					<div class="big pos">12</div>
+				</div>
+			</div>
+			</article>
+		</article>	
+	</section>
+</body>
+</html>
